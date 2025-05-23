@@ -12,7 +12,7 @@ const EMPTY_DISCOUNT: FunctionRunResult = {
 };
 
 export function run(input:any) {
-/*    const discounts: Discount[] = [];
+  const discounts: Discount[] = [];
 
   input.cart.lines.forEach((line:any) => {
       const variant = line.merchandise;
@@ -49,7 +49,6 @@ export function run(input:any) {
   } else {
     console.error("The PRO discount is not applied to any cart line or the customer doesn't have a PRO tag.");
     return EMPTY_DISCOUNT;
-  }*/
-    return EMPTY_DISCOUNT;
+  }
 }
 

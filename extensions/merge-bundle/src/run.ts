@@ -10,7 +10,7 @@ const NO_CHANGES: FunctionRunResult = {
 };
 
 export function run(input: RunInput): FunctionRunResult {
- /* const cartItems = input.cart.lines;
+  const cartItems = input.cart.lines;
   const operationsList:CartOperation[] = [];
   const idList:string[] = [];
 
@@ -56,6 +56,5 @@ export function run(input: RunInput): FunctionRunResult {
     }
   } else {
     return NO_CHANGES;
-  }*/
-  return NO_CHANGES;
+  }
 }

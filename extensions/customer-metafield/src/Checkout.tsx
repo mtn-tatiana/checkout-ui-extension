@@ -30,7 +30,6 @@ function Extension() {
         });
 
         if (!response.ok) {
-          console.log(response)
           return;
         }
 
@@ -64,7 +63,6 @@ function Extension() {
       setIsSaving(false);
 
       if (!response.ok) {
-        console.log(response)
         return;
       }
     } catch (error) {
