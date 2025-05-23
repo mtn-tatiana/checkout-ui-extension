@@ -1,0 +1,25 @@
+query RunInput {
+    cart {
+        lines {
+            id
+            cost {
+                amountPerQuantity {
+                    amount
+                }
+                totalAmount {
+                    amount
+                }
+            }
+            quantity
+            merchandise {
+            __typename
+                 ... on ProductVariant {
+                     id
+                     metafield(key: "other_price", namespace: "variant") {
+                       value
+                     }
+                }
+            }
+        }
+    }
+}

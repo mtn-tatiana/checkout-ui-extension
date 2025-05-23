@@ -1,0 +1,23 @@
+query RunInput {
+  cart {
+    lines {
+      cost {
+        amountPerQuantity {
+          amount
+        }
+      }
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          product {
+            id
+            title
+            inAnyCollection(ids: "gid://shopify/Collection/471801954592")
+          }
+        }
+      }
+    }
+  }
+}
